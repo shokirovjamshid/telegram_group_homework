@@ -16,5 +16,5 @@ def find_all_users_name(data: dict)->list:
         else:
             users_name.append(i['from'])
     return list(set(users_name))
-print(find_all_users_name(read_data("data/result.json")))
+
     
