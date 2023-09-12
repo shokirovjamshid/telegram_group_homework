@@ -9,6 +9,6 @@ def read_data(file_path: str)->dict:
         dict: Dictionary containing the data of the json file.
     
     """
-    f = open(file_path, mode='r+').read()
+    f = open(file_path, mode='r+',encoding="utf-8").read()
     data = json.loads(f)
     return data
